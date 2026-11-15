@@ -31,10 +31,9 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python extract.py
 
-      - name: JSON-Datei speichern
+          - name: JSON-Datei speichern
         run: |
           git config --local user.email "github-actions[bot]@://github.com"
           git config --local user.name "github-actions[bot]"
-          git add daten/angebote.json
+          git add daten/
           git diff --quiet && git diff-staged --quiet || (git commit -m "Update Prospektdaten" && git push)
-

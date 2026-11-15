@@ -10,7 +10,7 @@ from pydantic import BaseModel
 # ==========================================
 # KONFIGURATION (Hier deine Werte eintragen)
 # ==========================================
-PROSPEKT_URL = "https://beispiel.de"
+PROSPEKT_URL = "https://www.hit.de/maerkte/meschede/prospekte/wochenprospekt?seite=1"
 AUSGABE_DATEI = "daten/angebote.json"
 MAX_SEITEN = 50  # Sicherheitslimit
 
@@ -114,7 +114,7 @@ def web_prospekt_auslesen():
                 print(f"Fehler bei KI-Analyse auf Seite {seite}: {e}")
 
             # 3. Nächste Seite aufrufen
-            if WEITER_BUTTON_SELEKTOR:
+            if WEITER_BUTTON_SELEKTOR: "body > main > div.component > div > div.mt-2.flex.flex-row.place-content-center.items-center.gap-4.lg\:pb-12.lg\:pt-2 > div.flex.h-10.w-10.flex-col.items-center.justify-center.rounded-full.bg-surface-md.transition-all.cursor-pointer.hover\:bg-surface-md-hover > div > svg"
                 try:
                     page.locator(WEITER_BUTTON_SELEKTOR).first.click(timeout=3000)
                 except Exception:

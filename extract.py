@@ -10,10 +10,9 @@ from pydantic import BaseModel
 # ==========================================
 # KONFIGURATION
 # ==========================================
-PROSPEKT_URL = "https://www.aldi-nord.de/prospekte/aldi-aktuell.html?page=1"
+BASIS_URL = "https://www.aldi-nord.de/prospekte/aldi-aktuell.html?page="
 AUSGABE_DATEI = "daten/angebote.json"
-MAX_SEITEN = 50
-WEITER_BUTTON_SELEKTOR = "#content > div.margin-wrapper > div > div > div.leaflet-paging > button:nth-child(4)"
+MAX_SEITEN = 45
 
 
 # ==========================================
@@ -39,8 +38,8 @@ class ProspektSeite(BaseModel):
 def bild_analysieren(client, img_bytes):
     prompt = (
         "Analysiere diese ALDI-Prospektseite. Extrahiere ALLE beworbenen Produkte mit Preis. "
-        "Ignoriere reine Deko-Elemente, Logos, Seitenzahlen und Navigations-Buttons des Web-Viewers. "
-        "Achte bei Doppelseiten darauf, sowohl die linke als auch die rechte Seite vollständig zu erfassen."
+        "Falls es ein Titelblatt ohne konkrete Produktpreise ist, gib eine leere Liste zurück. "
+        "Ignoriere reine Deko-Elemente, Logos, Seitenzahlen und Navigations-Buttons der Webseite."
     )
     response = client.models.generate_content(
         model="gemini-2.5-flash",
@@ -60,82 +59,93 @@ def bild_analysieren(client, img_bytes):
 def web_prospekt_auslesen():
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     gesamte_produkte = []
-    vorheriger_screenshot = None
+    os.makedirs("daten", exist_ok=True)
 
     with sync_playwright() as p:
+        # User-Agent eines normalen Windows-Chrome setzen (verhindert Bot-Blockaden)
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             viewport={"width": 1920, "height": 1080},
             device_scale_factor=2,
-            locale="de-DE"
+            locale="de-DE",
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
         )
         page = context.new_page()
 
-        print(f"Lade Webseite: {PROSPEKT_URL}")
-        page.goto(PROSPEKT_URL, wait_until="networkidle")
-        time.sleep(3)
+        # Seite 1 öffnen und Cookie-Banner erledigen
+        start_url = f"{BASIS_URL}1"
+        print(f"Öffne Startseite: {start_url}")
+        page.goto(start_url, wait_until="domcontentloaded")
+        time.sleep(4)
 
-        # 1. Cookie-Banner automatisch schließen (inkl. ALDI "Alle bestätigen")
-        cookie_texte = ["Alle bestätigen", "Alle akzeptieren", "Akzeptieren", "Zustimmen", "Alle annehmen"]
-        for text in cookie_texte:
+        # Usercentrics / ALDI Cookie-Banner schließen
+        try:
+            uc_btn = page.locator("[data-testid='uc-accept-all-button']")
+            if uc_btn.is_visible(timeout=3000):
+                uc_btn.click()
+                print("ALDI Cookie-Banner (Usercentrics) geschlossen.")
+                time.sleep(2)
+        except Exception:
+            for text in ["Alle bestätigen", "Alle akzeptieren", "Akzeptieren"]:
+                try:
+                    btn = page.get_by_role("button", name=text, exact=False).first
+                    if btn.is_visible(timeout=1000):
+                        btn.click()
+                        print(f"Cookie-Banner geschlossen ({text}).")
+                        time.sleep(2)
+                        break
+                except Exception:
+                    pass
+
+        # Durch die Seiten iterieren (?page=1, ?page=2, ...)
+        for seite in range(1, MAX_SEITEN + 1):
+            ziel_url = f"{BASIS_URL}{seite}"
+            if seite > 1:
+                page.goto(ziel_url, wait_until="domcontentloaded")
+                time.sleep(3)
+
+            # Prüfen, ob ALDI zurück auf Seite 1 oder eine andere URL umgeleitet hat (Prospektende)
+            if seite > 1 and f"page={seite}" not in page.url:
+                print(f"Umleitung auf {page.url} erkannt – Ende des Prospekts erreicht.")
+                break
+
+            # Zum Prospekt-Viewer scrollen, damit er mittig im Bild ist
             try:
-                btn = page.get_by_role("button", name=text, exact=False).first
-                if btn.is_visible(timeout=1500):
-                    btn.click()
-                    print(f"Cookie-Banner geschlossen ({text}).")
-                    time.sleep(1.5)
-                    break
+                viewer = page.locator("#content > div.margin-wrapper").first
+                if viewer.is_visible(timeout=2000):
+                    viewer.scroll_into_view_if_needed()
+                    time.sleep(1)
             except Exception:
                 pass
 
-        # 2. Seite für Seite durchblättern
-        for seite in range(1, MAX_SEITEN + 1):
-            print(f"Erfasse Ansicht {seite}...")
-            time.sleep(2)
+            print(f"Erfasse Seite {seite} ({page.url})...")
             aktueller_screenshot = page.screenshot()
 
-            if aktueller_screenshot == vorheriger_screenshot:
-                print("Keine Änderung mehr erkannt – Ende des Prospekts erreicht.")
-                break
-
-            vorheriger_screenshot = aktueller_screenshot
+            # Debug-Screenshot von Seite 2 speichern (erste Innenseite mit Produkten)
+            if seite == 2:
+                with open("daten/debug_seite2.png", "wb") as f:
+                    f.write(aktueller_screenshot)
 
             # KI-Extraktion starten
             try:
                 gefundene_produkte = bild_analysieren(client, aktueller_screenshot)
-                print(f" -> {len(gefundene_produkte)} Produkte erkannt.")
+                print(f" -> {len(gefundene_produkte)} Produkte auf Seite {seite} erkannt.")
                 for prod in gefundene_produkte:
-                    prod["ansicht_nr"] = seite
+                    prod["seite_nr"] = seite
                     gesamte_produkte.append(prod)
             except Exception as e:
                 print(f"Fehler bei KI-Analyse auf Seite {seite}: {e}")
 
-            # 3. Nächste Seite aufrufen
-            if WEITER_BUTTON_SELEKTOR:
-                try:
-                    btn_next = page.locator(WEITER_BUTTON_SELEKTOR).first
-                    # Prüfen, ob der Button auf der letzten Seite deaktiviert (disabled) ist
-                    if btn_next.is_disabled():
-                        print("Weiter-Button ist deaktiviert – Ende erreicht.")
-                        break
-                    btn_next.click(timeout=3000)
-                except Exception:
-                    print("Weiter-Button nicht mehr klickbar – Ende erreicht.")
-                    break
-            else:
-                page.keyboard.press("ArrowRight")
-
         browser.close()
 
-    # 4. Metadaten & Ergebnisse als JSON speichern
+    # Ergebnisse speichern
     ergebnis_json = {
         "aktualisiert_am": datetime.now().isoformat(),
-        "quelle": PROSPEKT_URL,
+        "quelle": f"{BASIS_URL}1",
         "anzahl_produkte": len(gesamte_produkte),
         "produkte": gesamte_produkte
     }
 
-    os.makedirs(os.path.dirname(AUSGABE_DATEI), exist_ok=True)
     with open(AUSGABE_DATEI, "w", encoding="utf-8") as f:
         json.dump(ergebnis_json, f, ensure_ascii=False, indent=2)
 

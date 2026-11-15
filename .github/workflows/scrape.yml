@@ -1,1 +1,40 @@
+name: Web-Prospekte zu JSON
+
+on:
+  schedule:
+    # Läuft jeden Montag um 07:00 Uhr deutscher Zeit (06:00 UTC)
+    - cron: '0 6 * * 1'
+  workflow_dispatch: # Ermöglicht manuellen Start jederzeit per Klick
+
+jobs:
+  scrape-and-parse:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Erlaubt GitHub, die fertige JSON-Datei zu speichern
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Pakete und Chrome-Browser installieren
+        run: |
+          pip install -r requirements.txt
+          playwright install chromium --with-deps
+
+      - name: Prospekt blättern und auslesen
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python extract.py
+
+      - name: JSON-Datei speichern
+        run: |
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
+          git add daten/angebote.json
+          git diff --quiet && git diff-staged --quiet || (git commit -m "Update Prospektdaten" && git push)
 

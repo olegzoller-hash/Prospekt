@@ -10,9 +10,14 @@ from pydantic import BaseModel
 # ==========================================
 # KONFIGURATION
 # ==========================================
-BASIS_URL = "https://www.aldi-nord.de/prospekte/aldi-aktuell.html?page="
+BASIS_URL = "https://aldi-nord.de"
 AUSGABE_DATEI = "daten/angebote.json"
 MAX_SEITEN = 45
+SEITEN_PRO_ANFRAGE = 5
+
+# Hauptmodell und Backup-Modell bei Server-Überlastung (503)
+HAUPT_MODELL = "gemini-3.8-flash"
+BACKUP_MODELL = "gemini-3.5-flash-lite"
 
 
 # ==========================================
@@ -26,43 +31,69 @@ class Produkt(BaseModel):
     streichpreis: float | None
     grundpreis: str | None
     rabatt_badge: str | None
+    seite_nr: int
 
 
-class ProspektSeite(BaseModel):
+class ProspektPaket(BaseModel):
     produkte: list[Produkt]
 
 
 # ==========================================
-# HAUPTLOGIK
+# HAUPTLOGIK MIT RETRY & FALLBACK
 # ==========================================
-def bild_analysieren(client, img_bytes):
+def paket_analysieren(client, bilder_paket):
+    inhalte = []
+    seiten_nummern = []
+
+    for seite_nr, img_bytes in bilder_paket:
+        seiten_nummern.append(str(seite_nr))
+        inhalte.append(f"--- Seite {seite_nr} ---")
+        inhalte.append(types.Part.from_bytes(data=img_bytes, mime_type="image/png"))
+
     prompt = (
-        "Analysiere diese ALDI-Prospektseite. Extrahiere ALLE beworbenen Produkte mit Preis. "
-        "Falls es ein Titelblatt ohne konkrete Produktpreise ist, gib eine leere Liste zurück. "
-        "Ignoriere reine Deko-Elemente, Logos, Seitenzahlen und Navigations-Buttons der Webseite."
+        f"Analysiere diese ALDI-Prospektseiten (Seiten {', '.join(seiten_nummern)}). "
+        "Extrahiere ALLE beworbenen Produkte mit Preis und ordne jedem Produkt die korrekte 'seite_nr' zu. "
+        "Ignoriere reine Deko-Elemente, Logos und Navigations-Buttons der Webseite."
     )
-    response = client.models.generate_content(
-        model="gemini-3.8-flash",
-        contents=[
-            types.Part.from_bytes(data=img_bytes, mime_type="image/png"),
-            prompt
-        ],
-        config=types.GenerateContentConfig(
-            response_mime_type="application/json",
-            response_schema=ProspektSeite,
-            temperature=0.1,
-        ),
-    )
-    return json.loads(response.text).get("produkte", [])
+    inhalte.append(prompt)
+
+    # Bis zu 3 Versuche mit dem Hauptmodell, danach Wechsel auf Backup-Modell
+    versuche = [HAUPT_MODELL, HAUPT_MODELL, HAUPT_MODELL, BACKUP_MODELL]
+
+    for versuch_nr, aktuelles_modell in enumerate(versuche, start=1):
+        try:
+            response = client.models.generate_content(
+                model=aktuelles_modell,
+                contents=inhalte,
+                config=types.GenerateContentConfig(
+                    response_mime_type="application/json",
+                    response_schema=ProspektPaket,
+                    temperature=0.1,
+                ),
+            )
+            return json.loads(response.text).get("produkte", [])
+
+        except Exception as e:
+            fehler_text = str(e)
+            if "503" in fehler_text or "UNAVAILABLE" in fehler_text or "429" in fehler_text:
+                wartezeit = 15 * versuch_nr
+                print(f"   [Warnung] Server ausgelastet/Limit ({aktuelles_modell}). Warte {wartezeit}s vor Versuch {versuch_nr + 1}...")
+                time.sleep(wartezeit)
+            else:
+                raise e
+
+    print("   [Fehler] Alle Wiederholungsversuche für dieses Paket fehlgeschlagen.")
+    return []
 
 
 def web_prospekt_auslesen():
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
     gesamte_produkte = []
+    alle_screenshots = []
+    vorheriger_screenshot = None
     os.makedirs("daten", exist_ok=True)
 
     with sync_playwright() as p:
-        # User-Agent eines normalen Windows-Chrome setzen (verhindert Bot-Blockaden)
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
             viewport={"width": 1920, "height": 1080},
@@ -72,73 +103,69 @@ def web_prospekt_auslesen():
         )
         page = context.new_page()
 
-        # Seite 1 öffnen und Cookie-Banner erledigen
         start_url = f"{BASIS_URL}1"
         print(f"Öffne Startseite: {start_url}")
         page.goto(start_url, wait_until="domcontentloaded")
         time.sleep(4)
 
-        # Usercentrics / ALDI Cookie-Banner schließen
+        # Cookie-Banner schließen
         try:
             uc_btn = page.locator("[data-testid='uc-accept-all-button']")
             if uc_btn.is_visible(timeout=3000):
                 uc_btn.click()
-                print("ALDI Cookie-Banner (Usercentrics) geschlossen.")
+                print("ALDI Cookie-Banner geschlossen.")
                 time.sleep(2)
         except Exception:
-            for text in ["Alle bestätigen", "Alle akzeptieren", "Akzeptieren"]:
-                try:
-                    btn = page.get_by_role("button", name=text, exact=False).first
-                    if btn.is_visible(timeout=1000):
-                        btn.click()
-                        print(f"Cookie-Banner geschlossen ({text}).")
-                        time.sleep(2)
-                        break
-                except Exception:
-                    pass
+            pass
 
-        # Durch die Seiten iterieren (?page=1, ?page=2, ...)
+        # 1. Zuerst alle Screenshots einsammeln
         for seite in range(1, MAX_SEITEN + 1):
-            ziel_url = f"{BASIS_URL}{seite}"
             if seite > 1:
-                page.goto(ziel_url, wait_until="domcontentloaded")
-                time.sleep(3)
+                page.goto(f"{BASIS_URL}{seite}", wait_until="domcontentloaded")
+                time.sleep(2.5)
 
-            # Prüfen, ob ALDI zurück auf Seite 1 oder eine andere URL umgeleitet hat (Prospektende)
             if seite > 1 and f"page={seite}" not in page.url:
-                print(f"Umleitung auf {page.url} erkannt – Ende des Prospekts erreicht.")
+                print(f"Umleitung auf {page.url} – Prospektende bei Seite {seite - 1} erreicht.")
                 break
 
-            # Zum Prospekt-Viewer scrollen, damit er mittig im Bild ist
             try:
                 viewer = page.locator("#content > div.margin-wrapper").first
                 if viewer.is_visible(timeout=2000):
                     viewer.scroll_into_view_if_needed()
-                    time.sleep(1)
+                    time.sleep(0.5)
             except Exception:
                 pass
 
-            print(f"Erfasse Seite {seite} ({page.url})...")
             aktueller_screenshot = page.screenshot()
 
-            # Debug-Screenshot von Seite 2 speichern (erste Innenseite mit Produkten)
-            if seite == 2:
-                with open("daten/debug_seite2.png", "wb") as f:
-                    f.write(aktueller_screenshot)
+            if aktueller_screenshot == vorheriger_screenshot:
+                print(f"Keine neue Seite mehr – Prospektende bei Seite {seite - 1} erreicht.")
+                break
 
-            # KI-Extraktion starten
-            try:
-                gefundene_produkte = bild_analysieren(client, aktueller_screenshot)
-                print(f" -> {len(gefundene_produkte)} Produkte auf Seite {seite} erkannt.")
-                for prod in gefundene_produkte:
-                    prod["seite_nr"] = seite
-                    gesamte_produkte.append(prod)
-            except Exception as e:
-                print(f"Fehler bei KI-Analyse auf Seite {seite}: {e}")
+            vorheriger_screenshot = aktueller_screenshot
+            alle_screenshots.append((seite, aktueller_screenshot))
+            print(f"Screenshot von Seite {seite} gespeichert.")
 
         browser.close()
 
-    # Ergebnisse speichern
+    # 2. Screenshots in 5er-Paketen an die KI senden
+    print(f"Starte KI-Analyse für {len(alle_screenshots)} Seiten in {SEITEN_PRO_ANFRAGE}er-Paketen...")
+    for i in range(0, len(alle_screenshots), SEITEN_PRO_ANFRAGE):
+        paket = alle_screenshots[i:i + SEITEN_PRO_ANFRAGE]
+        start_s = paket
+        ende_s = paket[-1]
+        print(f"Analysiere Paket: Seiten {start_s} bis {ende_s}...")
+
+        try:
+            gefundene_produkte = paket_analysieren(client, paket)
+            print(f" -> {len(gefundene_produkte)} Produkte erkannt.")
+            gesamte_produkte.extend(gefundene_produkte)
+        except Exception as e:
+            print(f"Fehler bei Paket {start_s}-{ende_s}: {e}")
+
+        time.sleep(4)
+
+    # 3. Ergebnisse speichern
     ergebnis_json = {
         "aktualisiert_am": datetime.now().isoformat(),
         "quelle": f"{BASIS_URL}1",

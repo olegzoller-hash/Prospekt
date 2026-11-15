@@ -1,6 +1,2227 @@
 {
-  "aktualisiert_am": "2026-11-15T20:26:48.922129",
+  "aktualisiert_am": "2026-11-15T21:10:41.212483",
   "quelle": "https://www.aldi-nord.de/prospekte/aldi-aktuell.html?page=1",
-  "anzahl_produkte": 0,
-  "produkte": []
+  "anzahl_produkte": 222,
+  "produkte": [
+    {
+      "name": "Milchmäuse-Schneebälle",
+      "marke": "Choceur",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.59,
+      "streichpreis": 1.99,
+      "grundpreis": "kg = 12.23",
+      "rabatt_badge": "-20%",
+      "seite_nr": 1
+    },
+    {
+      "name": "Feine Nürnberger Oblaten-Lebkuchen",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.95,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.75",
+      "rabatt_badge": null,
+      "seite_nr": 1
+    },
+    {
+      "name": "Aachener Dominosteine",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.96",
+      "rabatt_badge": null,
+      "seite_nr": 1
+    },
+    {
+      "name": "Schoko-Lebkuchen",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 3.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.38",
+      "rabatt_badge": null,
+      "seite_nr": 1
+    },
+    {
+      "name": "Mini-Stollen",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 8.95",
+      "rabatt_badge": null,
+      "seite_nr": 1
+    },
+    {
+      "name": "Zapfen",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.27",
+      "rabatt_badge": null,
+      "seite_nr": 1
+    },
+    {
+      "name": "Weihnachtsgebäck",
+      "marke": "Wintertraum",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.79,
+      "streichpreis": 2.29,
+      "grundpreis": "kg = 11.93/8.95",
+      "rabatt_badge": "-21%",
+      "seite_nr": 1
+    },
+    {
+      "name": "Schokoladenfiguren",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 14.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Ciabatta",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Brot & Backwaren",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.97",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Weihnachtsnüsse",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren & Knabberartikel",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 16.60",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Spekulatius",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren & Gebäck",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.46/12.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Matcha-Macarons",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren & Gebäck",
+      "preis": 3.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.24",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Serrano- / Lachs-Röllchen",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Feinkost",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 28.43/27.26",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Fleischsalat",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Feinkost",
+      "preis": 1.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Wildlachs-Filet mit Topping",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.99",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Frische Pasta im Glas",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Pasta & Teigwaren",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.98",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Pesto",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 10.47",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Pesto mit Walnuss oder alla Genovese",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 17.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Premium-Garnelen",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 29.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Norwegischer Räucherlachs",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Geräucherte Lachsforelle",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 7.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.99",
+      "rabatt_badge": null,
+      "seite_nr": 2
+    },
+    {
+      "name": "Tafelfertiger Fond",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Suppen & Fonds",
+      "preis": 1.19,
+      "streichpreis": 1.39,
+      "grundpreis": "Liter = 2.98",
+      "rabatt_badge": "-14%",
+      "seite_nr": 2
+    },
+    {
+      "name": "Gewürzmühle",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Gewürze & Kräuter",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 42.00/22.80",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Raclette-Käse",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Französische Käseplatte",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 19.97",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 2
+    },
+    {
+      "name": "Schokoladenfiguren",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 14.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Weihnachtsnüsse",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 16.60",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Butter-Spekulatius",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Gebäck",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 15.09/12.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Matcha-Macarons",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Gebäck",
+      "preis": 3.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.24",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Edle Pasta im Glas",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Nudeln & Teigwaren",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.98",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Pesto",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 10.47",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Pesto mit Walnuss oder alla Genovese",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 17.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Tafelfertiger Fond",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Suppen & Fonds",
+      "preis": 1.19,
+      "streichpreis": 1.39,
+      "grundpreis": "Liter = 2.98",
+      "rabatt_badge": "-14%",
+      "seite_nr": 3
+    },
+    {
+      "name": "Gewürzmühle",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Gewürze",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 42.00/22.80",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Ciabatta",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Brot & Backwaren",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.97",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Serrano- / Lachs-Röllchen",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Feinkost & Vorspeisen",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 28.43/27.26",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Fleischsalat",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Feinkost & Salate",
+      "preis": 1.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Wildlachsfilet mit Topping",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.99",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Premium-Garnelen",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 29.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Norwegischer Räucherlachs",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Geräucherte Lachsforelle",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 7.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.99",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Raclette-Käse",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.45",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Französische Käseplatte",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 19.97",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 3
+    },
+    {
+      "name": "Ziegenfrischkäse im Speckmantel",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Kühltheke / Feinkost",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 26.60",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Italienische Salami-Spezialität",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Wurstwaren",
+      "preis": 2.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 27.90",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Blätterteig-Minis",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Tiefkühlung",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.97",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Meersalzschinken",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Wurstwaren",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.90",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Grand Cru",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 3.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 17.45",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Walnussbrot",
+      "marke": "MEIN BESTES",
+      "kategorie": "Backwaren",
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.10",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Bananen",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 0.99,
+      "streichpreis": 1.19,
+      "grundpreis": "kg-Preis",
+      "rabatt_badge": "-16%",
+      "seite_nr": 4
+    },
+    {
+      "name": "Hähnchen-Minutenschnitzel",
+      "marke": null,
+      "kategorie": "Fleisch",
+      "preis": 3.69,
+      "streichpreis": 4.99,
+      "grundpreis": "kg = 9.23",
+      "rabatt_badge": "-26%",
+      "seite_nr": 4
+    },
+    {
+      "name": "Deko-Wand-/Wochenkalender",
+      "marke": null,
+      "kategorie": "Papier- & Schreibwaren",
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Natives Olivenöl extra",
+      "marke": "LYTTOS",
+      "kategorie": "Öle & Essige",
+      "preis": 7.99,
+      "streichpreis": null,
+      "grundpreis": "Liter = 10.65",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 4
+    },
+    {
+      "name": "Pita-Taschen",
+      "marke": "LYTTOS",
+      "kategorie": "Backwaren",
+      "preis": 1.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 3.07",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 4
+    },
+    {
+      "name": "Joghurt nach griechischer Art XXL",
+      "marke": "LYTTOS",
+      "kategorie": "Milchprodukte",
+      "preis": 1.89,
+      "streichpreis": null,
+      "grundpreis": "kg = 1.72",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Weiße Riesenbohnen",
+      "marke": "LYTTOS",
+      "kategorie": "Konserven & Fertiggerichte",
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.04",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 4
+    },
+    {
+      "name": "Bifteki",
+      "marke": "LYTTOS",
+      "kategorie": "Tiefkühlung",
+      "preis": 5.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.32",
+      "rabatt_badge": null,
+      "seite_nr": 4
+    },
+    {
+      "name": "Buko",
+      "marke": "ARLA",
+      "kategorie": "Käse / Frischkäse",
+      "preis": 0.88,
+      "streichpreis": 1.99,
+      "grundpreis": "kg = 4.40",
+      "rabatt_badge": "-55%",
+      "seite_nr": 4
+    },
+    {
+      "name": "Eistee",
+      "marke": "LIPTON",
+      "kategorie": "Getränke",
+      "preis": 0.99,
+      "streichpreis": 1.69,
+      "grundpreis": "Liter = 0.79",
+      "rabatt_badge": "-41%",
+      "seite_nr": 4
+    },
+    {
+      "name": "Salatcreme",
+      "marke": "MIRACEL WHIP",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.49,
+      "streichpreis": 2.65,
+      "grundpreis": "Liter = 2.98",
+      "rabatt_badge": "-43%",
+      "seite_nr": 4
+    },
+    {
+      "name": "Ziegenfrischkäse im Speckmantel",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse & Feinkost",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 26.60",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Italienische Salami-Spezialität",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Wurst & Schinken",
+      "preis": 2.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 27.90",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Blätterteig-Minis",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Tiefkühlung",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.97",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Meersalzschinken",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Wurst & Schinken",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 24.90",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Grand Cru",
+      "marke": "GOURMET FINEST CUISINE",
+      "kategorie": "Käse",
+      "preis": 3.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 17.45",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Walnussbrot",
+      "marke": "MEIN BESTES",
+      "kategorie": "Backwaren",
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.18",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Bananen",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 0.99,
+      "streichpreis": 1.19,
+      "grundpreis": "kg-Preis",
+      "rabatt_badge": "-16%",
+      "seite_nr": 5
+    },
+    {
+      "name": "Hähnchen-Minutenschnitzel",
+      "marke": null,
+      "kategorie": "Fleisch & Geflügel",
+      "preis": 3.69,
+      "streichpreis": 4.99,
+      "grundpreis": "kg = 9.23",
+      "rabatt_badge": "-26%",
+      "seite_nr": 5
+    },
+    {
+      "name": "Deko-Wand-/Wochenkalender",
+      "marke": null,
+      "kategorie": "Non-Food",
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Buko",
+      "marke": "ARLA",
+      "kategorie": "Käse & Molkereiprodukte",
+      "preis": 0.88,
+      "streichpreis": 1.99,
+      "grundpreis": "kg = 4.40",
+      "rabatt_badge": "-55%",
+      "seite_nr": 5
+    },
+    {
+      "name": "Eistee",
+      "marke": "LIPTON",
+      "kategorie": "Getränke",
+      "preis": 0.99,
+      "streichpreis": 1.69,
+      "grundpreis": "Liter = 0.79",
+      "rabatt_badge": "-41%",
+      "seite_nr": 5
+    },
+    {
+      "name": "Salatcreme",
+      "marke": "MIRACEL WHIP",
+      "kategorie": "Saucen & Dips",
+      "preis": 1.49,
+      "streichpreis": 2.65,
+      "grundpreis": "Liter = 2.98",
+      "rabatt_badge": "-43%",
+      "seite_nr": 5
+    },
+    {
+      "name": "Natives Olivenöl extra",
+      "marke": "LYTTOS",
+      "kategorie": "Öle & Essig",
+      "preis": 7.99,
+      "streichpreis": null,
+      "grundpreis": "Liter = 10.65",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 5
+    },
+    {
+      "name": "Pita-Taschen",
+      "marke": "LYTTOS",
+      "kategorie": "Brot & Backwaren",
+      "preis": 1.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 3.07",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 5
+    },
+    {
+      "name": "Joghurt nach griechischer Art XXL",
+      "marke": "LYTTOS",
+      "kategorie": "Molkereiprodukte",
+      "preis": 1.89,
+      "streichpreis": null,
+      "grundpreis": "kg = 1.72",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Weiße Riesenbohnen",
+      "marke": "LYTTOS",
+      "kategorie": "Konserven & Feinkost",
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.04",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 5
+    },
+    {
+      "name": "Bifteki",
+      "marke": "LYTTOS",
+      "kategorie": "Tiefkühlung",
+      "preis": 5.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.32",
+      "rabatt_badge": null,
+      "seite_nr": 5
+    },
+    {
+      "name": "Clementinen",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 3.99,
+      "streichpreis": 4.99,
+      "grundpreis": "1,73 €/kg",
+      "rabatt_badge": "-20 %",
+      "seite_nr": 7
+    },
+    {
+      "name": "SunGold Kiwi",
+      "marke": "Zespri",
+      "kategorie": "Obst & Gemüse",
+      "preis": 0.66,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Bananen",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 0.99,
+      "streichpreis": 1.19,
+      "grundpreis": "0,99 €/kg",
+      "rabatt_badge": "-16 %",
+      "seite_nr": 7
+    },
+    {
+      "name": "Pomelo",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Bio Orangen",
+      "marke": "Naturland",
+      "kategorie": "Obst & Gemüse",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "1,99 €/kg",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Speisemöhren",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 1.19,
+      "streichpreis": null,
+      "grundpreis": "0,60 €/kg",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Bio Speisekürbis „Hokkaido“",
+      "marke": "Naturland",
+      "kategorie": "Obst & Gemüse",
+      "preis": 1.29,
+      "streichpreis": null,
+      "grundpreis": "1,29 €/kg",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Chicorée",
+      "marke": null,
+      "kategorie": "Obst & Gemüse",
+      "preis": 1.39,
+      "streichpreis": null,
+      "grundpreis": "2,78 €/kg",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 7
+    },
+    {
+      "name": "Chamaecyparis",
+      "marke": "GARDENLINE",
+      "kategorie": "Blumen & Pflanzen",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 7
+    },
+    {
+      "name": "Phalaenopsis",
+      "marke": "GARDENLINE",
+      "kategorie": "Blumen & Pflanzen",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 7
+    },
+    {
+      "name": "Grabgesteck/-schale/-leger",
+      "marke": "GARDENLINE",
+      "kategorie": "Blumen & Pflanzen",
+      "preis": 9.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 7
+    },
+    {
+      "name": "Rinderrouladen",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 6.99,
+      "streichpreis": 8.99,
+      "grundpreis": "kg = 13.98",
+      "rabatt_badge": "-22%",
+      "seite_nr": 9
+    },
+    {
+      "name": "Hackfleisch XXL",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 4.99,
+      "streichpreis": 6.49,
+      "grundpreis": "kg = 6.24",
+      "rabatt_badge": "-23%",
+      "seite_nr": 9
+    },
+    {
+      "name": "Schweinegulasch „Puszta“ XXL",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.99",
+      "rabatt_badge": null,
+      "seite_nr": 9
+    },
+    {
+      "name": "Lachsfiletportion",
+      "marke": "GOLDEN SEAFOOD",
+      "kategorie": "Fisch & Meeresfrüchte",
+      "preis": 3.19,
+      "streichpreis": 3.99,
+      "grundpreis": "kg = 16.36",
+      "rabatt_badge": "-20%",
+      "seite_nr": 9
+    },
+    {
+      "name": "Cevapcici XXL",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 5.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.86",
+      "rabatt_badge": null,
+      "seite_nr": 9
+    },
+    {
+      "name": "Brathähnchen",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 4.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 4.49",
+      "rabatt_badge": null,
+      "seite_nr": 9
+    },
+    {
+      "name": "Maispoularden-Hähnchenbrustfilet",
+      "marke": null,
+      "kategorie": "Fleisch, Geflügel & Wurst",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.98",
+      "rabatt_badge": null,
+      "seite_nr": 9
+    },
+    {
+      "name": "Pizza-Donut Cheeseburger-Style",
+      "marke": "MEIN BESTES",
+      "kategorie": "Brot & Backwaren",
+      "preis": 0.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": "AKTION",
+      "seite_nr": 9
+    },
+    {
+      "name": "Scholino",
+      "marke": "MEIN BESTES",
+      "kategorie": "Brot & Backwaren",
+      "preis": 0.59,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": "AKTION",
+      "seite_nr": 9
+    },
+    {
+      "name": "Kräuter-/Schwarz-/Grüntee",
+      "marke": "Meßmer",
+      "kategorie": "Kaffee, Tee & Kakao",
+      "preis": 1.49,
+      "streichpreis": 2.39,
+      "grundpreis": "kg = 29.80",
+      "rabatt_badge": "-37%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Chicken-Stripes XXL",
+      "marke": "JACK'S FARM",
+      "kategorie": "Tiefkühlung / Fleisch & Geflügel",
+      "preis": 8.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 8.49",
+      "rabatt_badge": "NEU!",
+      "seite_nr": 14
+    },
+    {
+      "name": "Dickmann's Oh Tannen-schaum",
+      "marke": "STORCK",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 2.29,
+      "streichpreis": 2.99,
+      "grundpreis": "kg = 13.31",
+      "rabatt_badge": "-23%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Tafel-schokolade",
+      "marke": "MILKA",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 0.95,
+      "streichpreis": 1.99,
+      "grundpreis": "kg = 10.56/9.50",
+      "rabatt_badge": "-52%",
+      "seite_nr": 14
+    },
+    {
+      "name": "m&m's",
+      "marke": "m&m's",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.69,
+      "streichpreis": 2.99,
+      "grundpreis": "kg = 13.20/11.27",
+      "rabatt_badge": "-43%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Crispy Mozzarella-Sticks XXL",
+      "marke": "SPEISEZEIT",
+      "kategorie": "Tiefkühlung / Snacks",
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.65",
+      "rabatt_badge": null,
+      "seite_nr": 14
+    },
+    {
+      "name": "Bistro Baguette",
+      "marke": "DR. OETKER",
+      "kategorie": "Tiefkühlung / Pizza & Baguettes",
+      "preis": 1.49,
+      "streichpreis": 2.29,
+      "grundpreis": "kg = 5.96",
+      "rabatt_badge": "-34%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Rahm-gemüse",
+      "marke": "IGLO",
+      "kategorie": "Tiefkühlung / Gemüse",
+      "preis": 2.39,
+      "streichpreis": 3.49,
+      "grundpreis": "kg = 4.78",
+      "rabatt_badge": "-31%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Weihnachts-sterne",
+      "marke": "WINTERTRAUM",
+      "kategorie": "Süßwaren & Snacks / Gebäck",
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.16",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 14
+    },
+    {
+      "name": "Napolitains",
+      "marke": "WINTERTRAUM",
+      "kategorie": "Süßwaren & Snacks / Schokolade",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 27.67",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 14
+    },
+    {
+      "name": "Schoko-röllchen",
+      "marke": "BISCOTTO",
+      "kategorie": "Süßwaren & Snacks / Gebäck",
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.93",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 14
+    },
+    {
+      "name": "Back-mischung",
+      "marke": "DR. OETKER",
+      "kategorie": "Backzutaten & Backmischungen",
+      "preis": 2.49,
+      "streichpreis": 3.79,
+      "grundpreis": "kg = 6.55/5.39",
+      "rabatt_badge": "-34%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Marzipan-rohmasse",
+      "marke": "BACK FAMILY",
+      "kategorie": "Backzutaten & Backmischungen",
+      "preis": 1.39,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.95",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 14
+    },
+    {
+      "name": "Bourbon-Vanille-Schoten",
+      "marke": "BACK FAMILY",
+      "kategorie": "Backzutaten & Backmischungen",
+      "preis": 1.29,
+      "streichpreis": 1.99,
+      "grundpreis": "Stück = 0.65",
+      "rabatt_badge": "-35%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Weihnachts-mann",
+      "marke": "MILKA",
+      "kategorie": "Süßwaren & Snacks / Schokolade",
+      "preis": 1.29,
+      "streichpreis": 1.89,
+      "grundpreis": "kg = 28.67",
+      "rabatt_badge": "-31%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Tassenkekse",
+      "marke": "WINTERTRAUM",
+      "kategorie": "Süßwaren & Snacks / Gebäck",
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": "AKTION",
+      "seite_nr": 14
+    },
+    {
+      "name": "Cremissimo",
+      "marke": "LANGNESE",
+      "kategorie": "Tiefkühlung / Eis",
+      "preis": 1.79,
+      "streichpreis": 3.99,
+      "grundpreis": "Liter = 2.17/1.99",
+      "rabatt_badge": "-55%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Stieleis",
+      "marke": "NUIÍ",
+      "kategorie": "Tiefkühlung / Eis",
+      "preis": 1.99,
+      "streichpreis": 3.99,
+      "grundpreis": "Liter = 7.37",
+      "rabatt_badge": "-50%",
+      "seite_nr": 14
+    },
+    {
+      "name": "HARIBO XXL",
+      "marke": "HARIBO",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 1.19,
+      "streichpreis": 1.49,
+      "grundpreis": "kg = 3.50",
+      "rabatt_badge": "-20%",
+      "seite_nr": 14
+    },
+    {
+      "name": "Kräuter-/Schwarz-/Grüntee",
+      "marke": "Meßmer",
+      "kategorie": null,
+      "preis": 1.49,
+      "streichpreis": 2.39,
+      "grundpreis": "kg = 29.80",
+      "rabatt_badge": "-37%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Chicken-Stripes XXL",
+      "marke": "JACK'S FARM",
+      "kategorie": null,
+      "preis": 8.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 8.49",
+      "rabatt_badge": "NEU!",
+      "seite_nr": 15
+    },
+    {
+      "name": "Dickmann's Oh Tannen-schaum",
+      "marke": "STORCK",
+      "kategorie": null,
+      "preis": 2.29,
+      "streichpreis": 2.99,
+      "grundpreis": "kg = 13.31",
+      "rabatt_badge": "-23%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Tafel-schokolade",
+      "marke": "MILKA",
+      "kategorie": null,
+      "preis": 0.95,
+      "streichpreis": 1.99,
+      "grundpreis": "kg = 10.56/9.50",
+      "rabatt_badge": "-52%",
+      "seite_nr": 15
+    },
+    {
+      "name": "m&m's",
+      "marke": "m&m's",
+      "kategorie": null,
+      "preis": 1.69,
+      "streichpreis": 2.99,
+      "grundpreis": "kg = 13.20/11.27",
+      "rabatt_badge": "-43%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Crispy Mozzarella-Sticks XXL",
+      "marke": "SPEISEZEIT",
+      "kategorie": null,
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.65",
+      "rabatt_badge": null,
+      "seite_nr": 15
+    },
+    {
+      "name": "Bistro Baguette",
+      "marke": "DR. OETKER",
+      "kategorie": null,
+      "preis": 1.49,
+      "streichpreis": 2.29,
+      "grundpreis": "kg = 5.96",
+      "rabatt_badge": "-34%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Rahm-gemüse",
+      "marke": "IGLO",
+      "kategorie": null,
+      "preis": 2.39,
+      "streichpreis": 3.49,
+      "grundpreis": "kg = 4.78",
+      "rabatt_badge": "-31%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Weihnachtsbäume",
+      "marke": "WINTERTRAUM",
+      "kategorie": null,
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.16",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 15
+    },
+    {
+      "name": "Napolitains",
+      "marke": "WINTERTRAUM",
+      "kategorie": null,
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 27.67",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 15
+    },
+    {
+      "name": "Schoko-röllchen",
+      "marke": null,
+      "kategorie": null,
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.93",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 15
+    },
+    {
+      "name": "Backmischung",
+      "marke": "DR. OETKER",
+      "kategorie": null,
+      "preis": 2.49,
+      "streichpreis": 3.79,
+      "grundpreis": "kg = 6.55/5.39",
+      "rabatt_badge": "-34%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Marzipan-rohmasse",
+      "marke": "FEINE FAMILY",
+      "kategorie": null,
+      "preis": 1.39,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.95",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 15
+    },
+    {
+      "name": "Bourbon-Vanille-Schoten",
+      "marke": "BACK FAMILY",
+      "kategorie": null,
+      "preis": 1.29,
+      "streichpreis": 1.99,
+      "grundpreis": "Stück = 0.65",
+      "rabatt_badge": "-35%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Weihnachtsmann",
+      "marke": "MILKA",
+      "kategorie": null,
+      "preis": 1.29,
+      "streichpreis": 1.89,
+      "grundpreis": "kg = 28.67",
+      "rabatt_badge": "-31%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Tassenkekse",
+      "marke": "WINTERTRAUM",
+      "kategorie": null,
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.94",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 15
+    },
+    {
+      "name": "Cremissimo",
+      "marke": "LANGNESE",
+      "kategorie": null,
+      "preis": 1.79,
+      "streichpreis": 3.99,
+      "grundpreis": "Liter = 2.17/1.99",
+      "rabatt_badge": "-55%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Stieleis",
+      "marke": "NUII",
+      "kategorie": null,
+      "preis": 1.99,
+      "streichpreis": 3.99,
+      "grundpreis": "Liter = 7.37",
+      "rabatt_badge": "-50%",
+      "seite_nr": 15
+    },
+    {
+      "name": "HARIBO XXL",
+      "marke": "HARIBO",
+      "kategorie": null,
+      "preis": 1.19,
+      "streichpreis": 1.49,
+      "grundpreis": "kg = 3.50",
+      "rabatt_badge": "-20%",
+      "seite_nr": 15
+    },
+    {
+      "name": "Premium-Glühwein",
+      "marke": null,
+      "kategorie": "Weine & Spirituosen",
+      "preis": 1.49,
+      "streichpreis": 2.49,
+      "grundpreis": "1 Liter = 1.99",
+      "rabatt_badge": "-40%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Mundspülung",
+      "marke": "LISTERINE",
+      "kategorie": "Körperpflege & Kosmetik",
+      "preis": 6.49,
+      "streichpreis": 7.99,
+      "grundpreis": "1 Liter = 5.90",
+      "rabatt_badge": "-18%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Beerenauslese Pfalz QbA",
+      "marke": "DR. MUTH",
+      "kategorie": "Weine & Spirituosen",
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": "1 Liter = 13.31",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 17
+    },
+    {
+      "name": "Cuvée",
+      "marke": null,
+      "kategorie": "Weine & Spirituosen",
+      "preis": 2.69,
+      "streichpreis": null,
+      "grundpreis": "1 Liter = 2.69",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 17
+    },
+    {
+      "name": "Añejo 3 Años/Especial",
+      "marke": "HAVANA CLUB",
+      "kategorie": "Weine & Spirituosen",
+      "preis": 10.99,
+      "streichpreis": 15.49,
+      "grundpreis": "1 Liter = 15.70",
+      "rabatt_badge": "-29%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Anti-Falten-Creme",
+      "marke": "L'ORÉAL",
+      "kategorie": "Körperpflege & Kosmetik",
+      "preis": 3.79,
+      "streichpreis": 4.45,
+      "grundpreis": "1 Liter = 75.80",
+      "rabatt_badge": "-14%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Soft/Creme",
+      "marke": "NIVEA",
+      "kategorie": "Körperpflege & Kosmetik",
+      "preis": 3.29,
+      "streichpreis": 3.85,
+      "grundpreis": "1 Liter = 16.45/13.16",
+      "rabatt_badge": "-14%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Slipeinlagen",
+      "marke": "ALWAYS",
+      "kategorie": "Körperpflege & Kosmetik",
+      "preis": 3.29,
+      "streichpreis": 3.85,
+      "grundpreis": "1 Stück = 0.06/0.07",
+      "rabatt_badge": "-14%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Ouzo",
+      "marke": "PLOMARI",
+      "kategorie": "Weine & Spirituosen",
+      "preis": 8.99,
+      "streichpreis": 11.99,
+      "grundpreis": "1 Liter = 12.84",
+      "rabatt_badge": "-25%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Pils",
+      "marke": "Krombacher",
+      "kategorie": "Bier",
+      "preis": 0.79,
+      "streichpreis": 0.99,
+      "grundpreis": "1 Liter = 1.58",
+      "rabatt_badge": "-20%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Energydrink",
+      "marke": "ROCKSTAR",
+      "kategorie": "Alkoholfreie Getränke",
+      "preis": 0.79,
+      "streichpreis": 1.49,
+      "grundpreis": "1 Liter = 1.58",
+      "rabatt_badge": "-46%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Küchenrollen",
+      "marke": "KOKETT",
+      "kategorie": "Haushalt & Papierwaren",
+      "preis": 4.49,
+      "streichpreis": null,
+      "grundpreis": "100 Blatt = 0.94",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 17
+    },
+    {
+      "name": "Toilettenpapier XXL",
+      "marke": "KOKETT",
+      "kategorie": "Haushalt & Papierwaren",
+      "preis": 9.69,
+      "streichpreis": null,
+      "grundpreis": "100 Blatt = 0.15",
+      "rabatt_badge": null,
+      "seite_nr": 17
+    },
+    {
+      "name": "Katzensnacks",
+      "marke": "DREAMIES / WHISKAS",
+      "kategorie": "Tierbedarf",
+      "preis": 2.99,
+      "streichpreis": 3.79,
+      "grundpreis": "1 kg = 16.61",
+      "rabatt_badge": "-21%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Mineralwasser",
+      "marke": "GEROLSTEINER",
+      "kategorie": "Alkoholfreie Getränke",
+      "preis": 0.89,
+      "streichpreis": 1.09,
+      "grundpreis": "1 Liter = 0.59",
+      "rabatt_badge": "-18%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Crunchips",
+      "marke": "LORENZ",
+      "kategorie": "Süßwaren & Snacks",
+      "preis": 0.99,
+      "streichpreis": 1.99,
+      "grundpreis": "1 kg = 5.66",
+      "rabatt_badge": "-50%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Waschmittel",
+      "marke": "Persil",
+      "kategorie": "Wasch- & Reinigungsmittel",
+      "preis": 4.99,
+      "streichpreis": 6.99,
+      "grundpreis": "1 Anwendung = 0.31/0.25",
+      "rabatt_badge": "-28%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Reiniger",
+      "marke": "SAGROTAN",
+      "kategorie": "Wasch- & Reinigungsmittel",
+      "preis": 2.79,
+      "streichpreis": 3.79,
+      "grundpreis": "1 Liter = 3.72",
+      "rabatt_badge": "-26%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Gemischte Vielfalt in Gelee",
+      "marke": "FELIX",
+      "kategorie": "Tierbedarf",
+      "preis": 11.99,
+      "streichpreis": 15.99,
+      "grundpreis": "1 kg = 2.94",
+      "rabatt_badge": "-25%",
+      "seite_nr": 17
+    },
+    {
+      "name": "Kritharaki",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 0.89,
+      "streichpreis": null,
+      "grundpreis": "kg = 1.78",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Grüne Pfefferoni",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.19,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.44 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Griechische Beilage",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.04",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Gyros-Pita mit Zaziki",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 10.50",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Oliven",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.93",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Mini-Cracker",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.55",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Rinder-Cevapcici",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 6.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 12.98",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Schnecke",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 3.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 3.79",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Mini-Rollen",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 2.99",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Oliven",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.39 ATG/8.45 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Käsecreme",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 15.90",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Fleischbällchen",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.48",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Halloumi",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.99,
+      "streichpreis": 2.49,
+      "grundpreis": "kg = 8.84",
+      "rabatt_badge": "-20%",
+      "seite_nr": 18
+    },
+    {
+      "name": "Griechischer Hirtenkäse",
+      "marke": "OLYMPUS",
+      "kategorie": null,
+      "preis": 1.39,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.95",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Metaxa 7 Sterne",
+      "marke": "Metaxa",
+      "kategorie": null,
+      "preis": 12.99,
+      "streichpreis": 20.99,
+      "grundpreis": "Liter = 18.56",
+      "rabatt_badge": "-38%",
+      "seite_nr": 18
+    },
+    {
+      "name": "Akropolis Original griechische Spirituose",
+      "marke": "Akropolis",
+      "kategorie": null,
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "Liter = 8.56",
+      "rabatt_badge": "-17%",
+      "seite_nr": 18
+    },
+    {
+      "name": "Tahini",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.63",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Fruchtjoghurt nach griechischer Art",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 2.65",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Feta-Würfel",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.27 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Kretischer Honig",
+      "marke": "LYTTOS",
+      "kategorie": null,
+      "preis": 4.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.53",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 18
+    },
+    {
+      "name": "Kritharaki",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 0.89,
+      "streichpreis": null,
+      "grundpreis": "kg = 1.78",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Grüne Pfefferonen",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.19,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.44 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Griechische Beilage",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.04",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Gyros-Pita mit Zaziki",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 10.50",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Oliven",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 11.93",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Mini-Cracker",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.55",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Rinder-Cevapcici",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 6.49,
+      "streichpreis": null,
+      "grundpreis": "kg = 12.98",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Schnecke",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 3.79,
+      "streichpreis": null,
+      "grundpreis": "kg = 3.79",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Mini-Rollen",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 2.99",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Oliven",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.69,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.39 ATG / 8.45 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Käsecreme",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 10.60",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Fleischbällchen",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.48",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Halloumi",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.99,
+      "streichpreis": 2.49,
+      "grundpreis": "kg = 8.84",
+      "rabatt_badge": "-20%",
+      "seite_nr": 19
+    },
+    {
+      "name": "Griechischer Hirtenkäse",
+      "marke": "OLYMPUS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.39,
+      "streichpreis": null,
+      "grundpreis": "kg = 6.95",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "7 Sterne",
+      "marke": "Metaxa",
+      "kategorie": "Spirituosen",
+      "preis": 12.99,
+      "streichpreis": 20.99,
+      "grundpreis": "Liter = 18.56",
+      "rabatt_badge": "-38%",
+      "seite_nr": 19
+    },
+    {
+      "name": "Original",
+      "marke": "AKROPOLIS",
+      "kategorie": "Spirituosen",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": "Liter = 8.56",
+      "rabatt_badge": "-17%",
+      "seite_nr": 19
+    },
+    {
+      "name": "Tahini",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 7.63",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Fruchtjoghurt nach griechischer Art",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.59,
+      "streichpreis": null,
+      "grundpreis": "kg = 2.65",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Feta-Würfel",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": "kg = 13.27 ATG",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Kretischer Honig",
+      "marke": "LYTTOS",
+      "kategorie": "Lebensmittel",
+      "preis": 4.29,
+      "streichpreis": null,
+      "grundpreis": "kg = 9.53",
+      "rabatt_badge": "AKTION",
+      "seite_nr": 19
+    },
+    {
+      "name": "Flanell-Bettwäsche",
+      "marke": "NOVITESSE",
+      "kategorie": "Heimtextilien",
+      "preis": 17.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Velours-Pyjama",
+      "marke": "L&D",
+      "kategorie": "Nachtwäsche",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Velours-Pyjama",
+      "marke": "LILY & DAN",
+      "kategorie": "Nachtwäsche",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Flauschsocken",
+      "marke": "L&D",
+      "kategorie": "Socken",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Hüttenschuhe",
+      "marke": "L&D",
+      "kategorie": "Hausschuhe",
+      "preis": 7.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Teddydecke",
+      "marke": "HOME CREATION",
+      "kategorie": "Heimtextilien",
+      "preis": 12.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Teddyplüschkissen",
+      "marke": "HOME CREATION",
+      "kategorie": "Kissen",
+      "preis": 4.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Glitter-Hologramm-Geschenkpapier",
+      "marke": "HOME CREATION",
+      "kategorie": "Geschenkpapier",
+      "preis": 0.99,
+      "streichpreis": null,
+      "grundpreis": "m² = 0,71 €",
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Holz-Weihnachtsdeko",
+      "marke": "HOME CREATION",
+      "kategorie": "Weihnachtsdekoration",
+      "preis": 2.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Premium-Geschenktaschen",
+      "marke": "HOME CREATION",
+      "kategorie": "Geschenktaschen",
+      "preis": 1.49,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "Weihnachtsdekoration",
+      "marke": "HOME CREATION",
+      "kategorie": "Weihnachtsdekoration",
+      "preis": 1.0,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 27
+    },
+    {
+      "name": "UP2FASHION Pullover",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 9.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Weihnachtspullover",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 7.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Hose",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 9.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Socken 2er-Set",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 3.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Minimizer-BH",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Slips 2er-Packung",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 1.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "UP2FASHION Socken 8er-Set",
+      "marke": "UP2FASHION",
+      "kategorie": "Bekleidung",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Weihnachtsstern",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 2.29,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventskranz-Rohling Ø ca. 30 cm",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 5.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventskranz-Rohling Ø ca. 35 cm",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 6.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Tannengrün ca. 500 g Bund",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 2.49,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Weihnachtsbäumchen",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 7.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventskranz/-schiff",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 19.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Advents-Rebenkranz/-Schiffchen",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 18.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventlicher Türstrauß",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 9.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventlicher Türkranz",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 8.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    },
+    {
+      "name": "GARDENLINE Adventskranz/-schiffchen/-gesteck",
+      "marke": "GARDENLINE",
+      "kategorie": "Pflanzen & Deko",
+      "preis": 9.99,
+      "streichpreis": null,
+      "grundpreis": null,
+      "rabatt_badge": null,
+      "seite_nr": 33
+    }
+  ]
 }

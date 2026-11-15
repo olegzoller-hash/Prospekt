@@ -42,7 +42,7 @@ def bild_analysieren(client, img_bytes):
         "Ignoriere reine Deko-Elemente, Logos, Seitenzahlen und Navigations-Buttons der Webseite."
     )
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.8-flash",
         contents=[
             types.Part.from_bytes(data=img_bytes, mime_type="image/png"),
             prompt
